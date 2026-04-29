@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Veterinary Client Experience Panel | May 20, 2026 | VBI</title>
-<meta name="description" content="Free live expert panel: The Spectrum of Care Playbook — keeping the middle-class pet owner. Tiered treatment options, team protocols, defensible documentation, and the economics of spectrum-of-care for veterinary practices." />
+<title>Veterinary Financial Health Panel | May 6, 2026 | VBI</title>
+<meta name="description" content="Free live expert panel: Profitability Playbook 2026 — how to increase revenue per visit without raising fees. Appointment conversion, marketing attribution, CAC optimization, and smarter service-mix strategy for veterinary practices." />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
 <!-- Microsoft Clarity -->
@@ -206,25 +206,25 @@
   }
   .hero-speaker-row {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
     margin: 24px 0 0;
   }
   .hero-speaker {
     background: rgba(255,255,255,0.78);
     border: 1px solid rgba(20,71,46,0.08);
     border-radius: 18px;
-    padding: 16px 18px;
+    padding: 14px 14px;
     box-shadow: var(--shadow-sm);
     backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     min-height: 94px;
   }
   .hero-speaker-photo {
-    width: 58px;
-    height: 58px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -238,20 +238,22 @@
     object-fit: cover;
     object-position: center top;
   }
+  .hero-speaker-meta { min-width: 0; }
   .hero-speaker-name {
     font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.05;
     color: var(--green-800);
   }
   .hero-speaker-role {
-    font-size: 11px;
-    line-height: 1.45;
+    font-size: 10.5px;
+    line-height: 1.4;
     text-transform: uppercase;
-    letter-spacing: 1.1px;
+    letter-spacing: 1px;
     color: var(--slate-500);
     font-weight: 700;
-    margin-top: 6px;
+    margin-top: 5px;
+    word-break: break-word;
   }
   .hero-form-shell {
     position: relative;
@@ -290,86 +292,6 @@
     margin-top: 28px;
     max-width: 560px;
   }
-
-  /* Speaker showcase card */
-  .speaker-showcase {
-    background: var(--white);
-    border-radius: 24px;
-    border: 1px solid var(--slate-100);
-    box-shadow: var(--shadow-lg);
-    overflow: hidden;
-    width: 100%;
-  }
-  .showcase-header {
-    background: linear-gradient(135deg, var(--green-800), var(--green-900));
-    padding: 24px 28px 20px;
-    color: #fff;
-    position: relative;
-  }
-  .showcase-header::after {
-    content: '';
-    position: absolute;
-    bottom: -14px; left: 30px;
-    width: 28px; height: 28px;
-    background: var(--green-800);
-    transform: rotate(45deg);
-    border-radius: 4px;
-  }
-  .showcase-label {
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--green-400);
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-  .showcase-title {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.3;
-  }
-  .showcase-speakers {
-    padding: 36px 28px 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-  .showcase-sp {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
-  .showcase-photo {
-    width: 72px; height: 72px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--green-100), var(--green-50));
-    border: 3px solid var(--green-400);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'DM Serif Display', serif;
-    font-size: 24px;
-    color: var(--green-700);
-    flex-shrink: 0;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  }
-  .showcase-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-  .showcase-name { font-size: 16px; font-weight: 700; color: var(--slate-900); margin-bottom: 2px; }
-  .showcase-role { font-size: 12px; color: var(--green-600); font-weight: 600; line-height: 1.35; }
-  .showcase-creds { font-size: 11px; color: var(--slate-500); margin-top: 2px; }
-  .showcase-date-strip {
-    background: var(--green-50);
-    border-top: 1px solid var(--slate-100);
-    padding: 16px 28px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .sd-item { display: flex; align-items: center; gap: 8px; }
-  .sd-icon { color: var(--green-600); display: flex; align-items: center; }
-  .sd-text { font-size: 13px; font-weight: 600; color: var(--slate-700); }
 
   /* RIGHT: Headline + countdown */
   .hero-eyebrow {
@@ -793,7 +715,7 @@
     line-height: 1.15;
   }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; }
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .bio-card {
     background: var(--white);
     border-radius: 20px;
@@ -889,6 +811,7 @@
     h1.hero-title { font-size: 38px; }
     .hero-grid { gap: 36px; }
     .hero-form-shell::before { inset: 18px -10px -18px 24px; }
+    .bio-cards { grid-template-columns: repeat(2, 1fr); }
   }
 
   /* Tablet portrait */
@@ -922,9 +845,6 @@
     .hero-form-shell::before { inset: 14px 8px -16px 8px; }
     .hero .section-title { font-size: 30px; }
 
-    .showcase-speakers { padding: 30px 20px 20px; }
-    .showcase-date-strip { padding: 14px 20px; gap: 12px; }
-
     .countdown-row { gap: 8px; }
     .cd-pill { min-width: 62px; padding: 10px 12px; }
     .cd-num { font-size: 22px; }
@@ -950,11 +870,6 @@
   @media (max-width: 480px) {
     .header-cta { display: none; }
 
-    .showcase-photo { width: 60px; height: 60px; font-size: 20px; }
-    .showcase-name { font-size: 14px; }
-    .showcase-role { font-size: 11px; }
-    .showcase-date-strip { justify-content: flex-start; }
-
     .countdown-row { flex-wrap: wrap; }
     .cd-pill { flex: 1; min-width: 0; }
 
@@ -972,8 +887,6 @@
   /* Very small phones */
   @media (max-width: 360px) {
     h1.hero-title { font-size: 24px; }
-    .showcase-header { padding: 18px 18px 16px; }
-    .showcase-title { font-size: 15px; }
     .reg-card { padding: 18px 14px 16px; }
   }
 </style>
@@ -984,13 +897,13 @@
 <div class="ticker">
   <div class="ticker-track">
     <span class="ticker-item">🎁 Register today to win an exclusive gift valued at $900 <span class="sep">|</span></span>
-    <span class="ticker-item">FREE LIVE PANEL — May 20, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
+    <span class="ticker-item">FREE LIVE PANEL — May 6, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
     <span class="ticker-item">Limited seats · Replay sent to all registrants <span class="sep">|</span></span>
-    <span class="ticker-item">Spectrum of care · Team protocols · Practice economics <span class="sep">|</span></span>
+    <span class="ticker-item">Conversion · Marketing attribution · Service mix <span class="sep">|</span></span>
     <span class="ticker-item">🎁 Register today to win an exclusive gift valued at $900 <span class="sep">|</span></span>
-    <span class="ticker-item">FREE LIVE PANEL — May 20, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
+    <span class="ticker-item">FREE LIVE PANEL — May 6, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
     <span class="ticker-item">Limited seats · Replay sent to all registrants <span class="sep">|</span></span>
-    <span class="ticker-item">Spectrum of care · Team protocols · Practice economics <span class="sep">|</span></span>
+    <span class="ticker-item">Conversion · Marketing attribution · Service mix <span class="sep">|</span></span>
   </div>
 </div>
 
@@ -1020,7 +933,7 @@
       <div class="hero-event-strip">
         <div class="event-chip">
           <div class="event-chip-label">Date</div>
-          <div class="event-chip-value">May 20, 2026</div>
+          <div class="event-chip-value">May 6, 2026</div>
         </div>
         <div class="event-chip">
           <div class="event-chip-label">Time</div>
@@ -1033,32 +946,42 @@
       </div>
 
       <h1 class="hero-title">
-        The Spectrum of <span class="accent">Care Playbook:</span> Keeping the <span class="accent">Middle-Class Pet Owner</span>
+        Profitability <span class="accent">Playbook 2026:</span> How to Increase Revenue Per Visit <span class="accent">Without Raising Fees</span>
       </h1>
 
       <p class="hero-sub">
-        The "gold standard or nothing" model is squeezing both clients and practices out of the relationship. Spectrum of care offers a more honest path — but only if your team can deliver it consistently, document it defensibly, and price it fairly.
+        In a price-sensitive market, raising fees is no longer the only path to profit. Learn how to maximize the value of every client interaction — through sharper conversion, smarter marketing spend, and a service mix that protects margin without sacrificing care or client trust.
       </p>
 
       <div class="hero-speaker-row">
         <div class="hero-speaker">
           <div class="hero-speaker-photo">
-            <img src="Charles%20Hurty_VET_20.05.2026.PNG" alt="Charles Hurty"
-                 onerror="this.style.display='none';this.parentNode.innerHTML='CH'" />
+            <img src="Melani%20Beltran%20Keil_VET_6.05.2026.jpg" alt="Melanie Beltran Keil"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='MK'" />
           </div>
           <div class="hero-speaker-meta">
-            <div class="hero-speaker-name">Charles</div>
-            <div class="hero-speaker-role">Charles Hurty</div>
+            <div class="hero-speaker-name">Melanie</div>
+            <div class="hero-speaker-role">Melanie Keil</div>
           </div>
         </div>
         <div class="hero-speaker">
           <div class="hero-speaker-photo">
-            <img src="Leilani%20Mustillo_VET_20.05.2026.jpeg" alt="Leilani Mustillo"
-                 onerror="this.style.display='none';this.parentNode.innerHTML='LM'" />
+            <img src="Joe%20Chickerillo_VET_06.05.2026.png" alt="Joe Chickerillo"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='JC'" />
           </div>
           <div class="hero-speaker-meta">
-            <div class="hero-speaker-name">Leilani</div>
-            <div class="hero-speaker-role">Leilani Mustillo</div>
+            <div class="hero-speaker-name">Joe</div>
+            <div class="hero-speaker-role">Joe Chickerillo</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="David%20McCormick_VET_06.05.2026.jpg" alt="David McCormick"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='DM'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">David</div>
+            <div class="hero-speaker-role">David McCormick</div>
           </div>
         </div>
       </div>
@@ -1135,19 +1058,19 @@
     <div class="topic-cards">
       <div class="topic-card">
         <div class="topic-num">1</div>
-        <div class="topic-text">Reframe the exam room conversation — moving from "gold standard or nothing" to tiered, transparent options without guilt or pressure</div>
+        <div class="topic-text">Increase revenue per visit through more effective value communication and strategic service packaging</div>
       </div>
       <div class="topic-card">
         <div class="topic-num">2</div>
-        <div class="topic-text">Build protocols your team can deliver — train associates and techs to offer spectrum of care consistently across every doctor</div>
+        <div class="topic-text">Improve conversion rates from the initial client inquiry to a confirmed, booked appointment</div>
       </div>
       <div class="topic-card">
         <div class="topic-num">3</div>
-        <div class="topic-text">Document declined and client-chosen care defensibly — charting that protects the practice and respects owner autonomy</div>
+        <div class="topic-text">Use marketing attribution to identify high-performing channels and optimize your Cost Per Acquisition (CAC)</div>
       </div>
       <div class="topic-card">
         <div class="topic-num">4</div>
-        <div class="topic-text">Hold or grow revenue per visit even as visit counts decline — the economics of "keeping them in the room"</div>
+        <div class="topic-text">Protect practice margins by optimizing your service mix rather than relying on blanket fee increases</div>
       </div>
     </div>
   </div>
@@ -1159,23 +1082,23 @@
     <div>
       <div class="about-eyebrow">About This Session</div>
       <h2 class="about-title">
-        Keep the middle class — <span class="accent">without compromising care</span>
+        Grow profit — <span class="accent">without raising fees</span>
       </h2>
       <p class="about-copy">
-        Join the Veterinary Business Institute for a Veterinary Client Experience Panel built for owners, associates, and team leaders working to serve the middle-class pet owner without compromising medicine, margin, or trust.
+        Join the Veterinary Business Institute for a financial health panel designed for practice owners, managers, and financial coordinators looking to drive sustainable growth in a price-sensitive market.
       </p>
       <p class="about-copy">
-        This panel will explore how spectrum-of-care practices avoid the two traps — sliding into under-medicine on one side and pricing the middle-class client out on the other — while building team protocols and documentation that hold up in 2026.
+        We'll walk through the 2026 Profitability Playbook — improving appointment conversion, optimizing marketing attribution and CAC, and shifting service mix in ways that protect margin while maintaining a high standard of care and client trust.
       </p>
     </div>
     <div class="who-box">
       <h4>This Panel Is For You If...</h4>
       <ul>
         <li>You own, lead, or manage a veterinary practice</li>
-        <li>Middle-class clients are walking out unable to afford "gold standard"</li>
-        <li>Your associates approach treatment options inconsistently</li>
-        <li>You're worried about legal exposure when clients decline care</li>
-        <li>You want practical scripts and protocols, not theory</li>
+        <li>You're hesitant to raise fees in a price-sensitive market</li>
+        <li>Conversion from inquiry to booked appointment is leaking revenue</li>
+        <li>Your marketing spend isn't tied to clear attribution or CAC</li>
+        <li>You want to grow margin without compromising care or trust</li>
       </ul>
     </div>
   </div>
@@ -1191,32 +1114,48 @@
       <div class="bio-card">
         <div class="bio-card-top">
           <div class="bio-photo">
-            <img src="Charles%20Hurty_VET_20.05.2026.PNG" alt="Charles Hurty"
-                 onerror="this.style.display='none';this.parentNode.innerHTML='CH'" />
+            <img src="Melani%20Beltran%20Keil_VET_6.05.2026.jpg" alt="Melanie Beltran Keil"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='MK'" />
           </div>
           <div class="bio-meta">
-            <div class="bio-name">Charles Hurty</div>
-            <div class="bio-role">Veterinarian & Medical Director · Grove Veterinary Clinic</div>
+            <div class="bio-name">Melanie Beltran Keil</div>
+            <div class="bio-role">Friction Pathfinder · Independent Practice Growth</div>
           </div>
         </div>
         <div class="bio-text">
-          A veterinarian, medical director, and leadership voice in veterinary medicine focused on culture, well-being, and sustainable care. Based in Newport, Oregon, Charles and his wife Dr. Natasha Knight grew Grove Veterinary Clinic into a five-doctor hospital and developed GRIT + LOVE, a framework for resilient teams. Past president of the Oregon Veterinary Medical Association, chair of the OVMA Veterinary Well-being Committee, 2026 OVMA Veterinary Service Award recipient, and President-Elect of the Society for Veterinary Medical Ethics.
+          A friction pathfinder supporting independent veterinarians in growing the practice they deserve — without the headaches. Helps owners realize their dream to grow profits while retaining 100% ownership, with a track record of practice success stories, accelerated growth, and giving owners back their personal and family time from the crushing weight of business fears.
         </div>
       </div>
 
       <div class="bio-card">
         <div class="bio-card-top">
           <div class="bio-photo">
-            <img src="Leilani%20Mustillo_VET_20.05.2026.jpeg" alt="Leilani Mustillo"
-                 onerror="this.style.display='none';this.parentNode.innerHTML='LM'" />
+            <img src="Joe%20Chickerillo_VET_06.05.2026.png" alt="Joe Chickerillo"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='JC'" />
           </div>
           <div class="bio-meta">
-            <div class="bio-name">Leilani Mustillo</div>
-            <div class="bio-role">CEO & Founder · Animal HealthLink</div>
+            <div class="bio-name">Joe Chickerillo</div>
+            <div class="bio-role">Growth & Operations · SaaS Veteran</div>
           </div>
         </div>
         <div class="bio-text">
-          With 19 years of experience in veterinary medicine, Leilani has moved from hands-on clinical work to virtual care solutions that promote sustainable practices and improve patient access to care. CEO and Founder of Animal HealthLink, a veterinary telehealth company operating in Canada, USA, and Australia. Board Member of the Canadian Veterinary Virtual Care Association (CVVCA) and co-host of the Don't Call Me Catty Podcast.
+          15 years bringing startup SaaS companies to market with a focus on automation, scalability, and efficiency. Spent most of that time in dental — helping dentists and DSOs grow, automate, and scale operations — and now brings the same playbook into veterinary. Specializes in online booking, practice analytics, client communications, and digital marketing.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="David%20McCormick_VET_06.05.2026.jpg" alt="David McCormick"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='DM'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">David McCormick, MS, CVA</div>
+            <div class="bio-role">Practice Appraiser & Broker · Simmons & Associates</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Veterinary practice appraiser, broker, and transaction specialist with Simmons & Associates. For over 20 years he has facilitated successful buy-sell transactions and helped owners improve practice profitability. Teaches nationally and internationally on practice value, financial health, buying and selling, exit planning, and other ownership issues.
         </div>
       </div>
     </div>
@@ -1226,7 +1165,7 @@
 <!-- ======== CTA BAND ======== -->
 <section class="cta-band">
   <div class="wrap">
-    <h3>Ready to Keep the <span class="accent">Middle Class in the Room?</span></h3>
+    <h3>Ready to Raise Margin — <span class="accent">Not Fees?</span></h3>
     <p>Free registration · Live Q&amp;A · Replay included · $900 gift giveaway</p>
     <a href="#register" class="cta-btn-lg">Reserve My Spot →</a>
   </div>
@@ -1262,7 +1201,7 @@
     const source_id = new URLSearchParams(window.location.search).get('s') || '';
 
     const data = {
-      event_key:   'event_2026_05_20',
+      event_key:   'event_2026_05_06',
       first_name:  form.first_name.value.trim(),
       last_name:   form.last_name.value.trim(),
       email:       form.email.value.trim(),
@@ -1311,8 +1250,8 @@
     }
   });
 
-  // ── COUNTDOWN — May 20, 2026 8:00 PM EDT (UTC-4) = May 21 00:00 UTC ──
-  const target = new Date('2026-05-21T00:00:00Z').getTime();
+  // ── COUNTDOWN — May 6, 2026 8:00 PM EDT (UTC-4) = May 7 00:00 UTC ──
+  const target = new Date('2026-05-07T00:00:00Z').getTime();
   function tick() {
     const diff = Math.max(0, target - Date.now());
     if (diff === 0) {

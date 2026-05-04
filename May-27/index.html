@@ -206,25 +206,25 @@
   }
   .hero-speaker-row {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
     margin: 24px 0 0;
   }
   .hero-speaker {
     background: rgba(255,255,255,0.78);
     border: 1px solid rgba(20,71,46,0.08);
     border-radius: 18px;
-    padding: 16px 18px;
+    padding: 14px 14px;
     box-shadow: var(--shadow-sm);
     backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     min-height: 94px;
   }
   .hero-speaker-photo {
-    width: 58px;
-    height: 58px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -238,20 +238,22 @@
     object-fit: cover;
     object-position: center top;
   }
+  .hero-speaker-meta { min-width: 0; }
   .hero-speaker-name {
     font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.05;
     color: var(--green-800);
   }
   .hero-speaker-role {
-    font-size: 11px;
-    line-height: 1.45;
+    font-size: 10.5px;
+    line-height: 1.4;
     text-transform: uppercase;
-    letter-spacing: 1.1px;
+    letter-spacing: 1px;
     color: var(--slate-500);
     font-weight: 700;
-    margin-top: 6px;
+    margin-top: 5px;
+    word-break: break-word;
   }
   .hero-form-shell {
     position: relative;
@@ -713,7 +715,7 @@
     line-height: 1.15;
   }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; }
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .bio-card {
     background: var(--white);
     border-radius: 20px;
@@ -809,6 +811,7 @@
     h1.hero-title { font-size: 38px; }
     .hero-grid { gap: 36px; }
     .hero-form-shell::before { inset: 18px -10px -18px 24px; }
+    .bio-cards { grid-template-columns: repeat(2, 1fr); }
   }
 
   /* Tablet portrait */
@@ -971,6 +974,16 @@
             <div class="hero-speaker-role">Barbara Bryer</div>
           </div>
         </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Pushproop%20PR%20Brar_VET_27.05.2026.jpg" alt="Pushproop PR Brar"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='PB'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Pushproop</div>
+            <div class="hero-speaker-role">Pushproop Brar</div>
+          </div>
+        </div>
       </div>
 
       <div class="countdown-row" id="countdown">
@@ -1127,6 +1140,22 @@
         </div>
         <div class="bio-text">
           Dr. Barb Bryer is a veterinarian with over 25 years dedicated exclusively to emergency medicine. After starting in rural mixed-animal practice, she returned to Toronto to focus on small-animal emergency care, leading the Emergency Medicine team at Toronto's first 24/7 emergency hospital and joining the founding team at Toronto Animal Health Partners. In November 2026 she joined VEG to lead the launch of VEG Etobicoke — Canada's first fully open-concept, 24/7 emergency veterinary hospital.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Pushproop%20PR%20Brar_VET_27.05.2026.jpg" alt="Pushproop PR Brar"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='PB'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Pushproop PR Brar</div>
+            <div class="bio-role">Veterinarian · 33+ Years · Global Practice</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Dr. Pushproop PR Brar brings 33 years of veterinary practice across multiple countries, with a deep professional interest in building better financial returns for the profession. His career has spanned diverse markets and clinical contexts, giving him a global perspective on how practices can think more strategically about profitability. Outside the clinic, he's a husband and father of two young boys.
         </div>
       </div>
     </div>

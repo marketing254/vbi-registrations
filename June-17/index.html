@@ -206,25 +206,25 @@
   }
   .hero-speaker-row {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
     margin: 24px 0 0;
   }
   .hero-speaker {
     background: rgba(255,255,255,0.78);
     border: 1px solid rgba(20,71,46,0.08);
     border-radius: 18px;
-    padding: 16px 18px;
+    padding: 14px 14px;
     box-shadow: var(--shadow-sm);
     backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     min-height: 94px;
   }
   .hero-speaker-photo {
-    width: 58px;
-    height: 58px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -238,20 +238,23 @@
     object-fit: cover;
     object-position: center top;
   }
+  .hero-speaker-meta { min-width: 0; }
   .hero-speaker-name {
     font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 22px;
-    line-height: 1.05;
+    font-size: 17px;
+    line-height: 1.1;
     color: var(--green-800);
+    word-break: break-word;
   }
   .hero-speaker-role {
-    font-size: 11px;
-    line-height: 1.45;
+    font-size: 10px;
+    line-height: 1.4;
     text-transform: uppercase;
-    letter-spacing: 1.1px;
+    letter-spacing: 0.8px;
     color: var(--slate-500);
     font-weight: 700;
-    margin-top: 6px;
+    margin-top: 5px;
+    word-break: break-word;
   }
   .hero-form-shell {
     position: relative;
@@ -713,7 +716,7 @@
     line-height: 1.15;
   }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; }
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .bio-card {
     background: var(--white);
     border-radius: 20px;
@@ -809,6 +812,7 @@
     h1.hero-title { font-size: 38px; }
     .hero-grid { gap: 36px; }
     .hero-form-shell::before { inset: 18px -10px -18px 24px; }
+    .bio-cards { grid-template-columns: repeat(2, 1fr); }
   }
 
   /* Tablet portrait */
@@ -971,6 +975,16 @@
             <div class="hero-speaker-role">Hospital Director · 24/7 ER &amp; Specialty Hospitals</div>
           </div>
         </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Jason%20Epstein_VET_17.06.2025.jpg" alt="Jason Epstein"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='JE'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Jason Epstein</div>
+            <div class="hero-speaker-role">CVO &amp; Founder · CatsOnly Veterinary Services</div>
+          </div>
+        </div>
       </div>
 
       <div class="countdown-row" id="countdown">
@@ -1127,6 +1141,22 @@
         </div>
         <div class="bio-text">
           Hailing from Toronto, Jen has been a notable figure in veterinary medicine for well over a decade. An RVT and CVPM, she was named PetPlan Practice Manager of the Year in 2018 and received the Emerging Leaders scholarship from the VHMA in 2021. Her roles have included Practice Manager and Operations Director, and she currently serves as Hospital Director overseeing two 24/7 ER & Specialty hospitals in the GTA.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Jason%20Epstein_VET_17.06.2025.jpg" alt="Jason Epstein"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='JE'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Jason Epstein</div>
+            <div class="bio-role">Chief Veterinary Officer & Founder · CatsOnly Veterinary Services</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          A veterinarian with over 20 years of experience, Jason specializes in leadership roles across staffing, operations, and practice management — with a proven track record of driving strategic growth, operational excellence, and innovation. He is skilled at identifying and resolving clinical inefficiencies to optimize workflow and patient care, and is passionate about empowering technical staff and using technology to lift the standard of care.
         </div>
       </div>
     </div>

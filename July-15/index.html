@@ -206,7 +206,7 @@
   }
   .hero-speaker-row {
     display: grid;
-    grid-template-columns: minmax(0, 360px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
     margin: 24px 0 0;
   }
@@ -716,12 +716,7 @@
     line-height: 1.15;
   }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; }
-  .bio-cards {
-    display: grid;
-    grid-template-columns: minmax(0, 580px);
-    justify-content: center;
-    gap: 24px;
-  }
+  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .bio-card {
     background: var(--white);
     border-radius: 20px;
@@ -825,8 +820,8 @@
     .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-main { padding-top: 0; }
     .hero-copy { max-width: none; }
-    .hero-event-strip { grid-template-columns: 1fr; }
-    .hero-speaker-row { grid-template-columns: minmax(0, 360px); }
+    .hero-event-strip,
+    .hero-speaker-row { grid-template-columns: 1fr; }
     .hero-proof,
     .hero-form-shell { max-width: 640px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -849,8 +844,6 @@
     .hero-sub { font-size: 15px; }
     .hero-form-shell::before { inset: 14px 8px -16px 8px; }
     .hero .section-title { font-size: 30px; }
-
-    .hero-speaker-row { grid-template-columns: 1fr; }
 
     .countdown-row { gap: 8px; }
     .cd-pill { min-width: 62px; padding: 10px 12px; }
@@ -969,6 +962,16 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Katerina Svigos</div>
             <div class="hero-speaker-role">Founder & Owner · TrueVets Veterinary Hospitals</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Kelly%20Barone_VET_15.0.2026.jpg" alt="Kelly Barone"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='KB'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Kelly Barone</div>
+            <div class="hero-speaker-role">Veterinary Hospital Manager · Reiki Master</div>
           </div>
         </div>
       </div>
@@ -1098,7 +1101,7 @@
 <!-- ======== SPEAKER BIOS ======== -->
 <section class="speakers-section">
   <div class="wrap">
-    <div class="section-eyebrow">Meet Your Panelist</div>
+    <div class="section-eyebrow">Meet Your Panelists</div>
     <h2 class="section-title">Learn From <span class="accent">The Best</span></h2>
 
     <div class="bio-cards">
@@ -1115,6 +1118,22 @@
         </div>
         <div class="bio-text">
           Katerina Svigos is the Founder and Owner of TrueVets Veterinary Hospitals in Florida, where she leads veterinary professionals and specialists in delivering gold-standard care through an integrative approach combining Eastern and Western medicine. A Doctor of Veterinary Medicine candidate at St. Matthew's University, she is committed to expanding TrueVets nationwide to make accessible, affordable, and high-quality veterinary medicine available to communities across the country.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Kelly%20Barone_VET_15.0.2026.jpg" alt="Kelly Barone"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='KB'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Kelly Barone</div>
+            <div class="bio-role">Veterinary Hospital Manager · Reiki Master & Animal Practitioner</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          With 17+ years across the animal care industry, Kelly is a seasoned veterinary hospital manager dedicated to creating compassionate environments where operational efficiency and heartfelt service go hand in hand. As a Peer Development Partner, Change Champion, and Divisional Wellness Mentor, she has guided fellow hospital managers, led positive transformations across company-wide initiatives, and supported wellness plan enrollment across her division. A Credentialed Usui Reiki Master and Animal Practitioner, she brings both leadership rigor and a unique healing-arts perspective to her work.
         </div>
       </div>
     </div>

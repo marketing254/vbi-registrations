@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Veterinary Client Experience Panel | July 8, 2026 | VBI</title>
-<meta name="description" content="Free live expert panel: The Aging Pet Playbook — managing pain, mobility, and quality of life in senior pets. Early detection, the modern pain-management toolkit, honest quality-of-life conversations, and durable senior-wellness relationships." />
+<title>Veterinary Technology & Innovation Panel | July 29, 2026 | VBI</title>
+<meta name="description" content="Free live expert panel: The Numbers You're Not Reading — how independent vet owners get real visibility into profit, cash flow, and hidden margin leaks. P&L literacy, financial advisory layers, and visibility infrastructure for veterinary practices." />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
 <!-- Microsoft Clarity -->
@@ -55,13 +55,7 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--white);
-    color: var(--slate-700);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
+  body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--white); color: var(--slate-700); line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 
   .ticker { background: var(--green-900); overflow: hidden; padding: 10px 0; position: relative; }
@@ -93,13 +87,13 @@
   .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; line-height: 1.15; color: var(--green-800); }
-  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
+  .hero-speaker-row { display: grid; grid-template-columns: minmax(0, 360px); gap: 14px; margin: 24px 0 0; }
   .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
   .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(77,184,130,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .hero-speaker-meta { min-width: 0; }
-  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.1; color: var(--green-800); word-break: break-word; }
-  .hero-speaker-role { font-size: 10.5px; line-height: 1.4; text-transform: uppercase; letter-spacing: 1px; color: var(--slate-500); font-weight: 700; margin-top: 5px; word-break: break-word; }
+  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; line-height: 1.05; color: var(--green-800); }
+  .hero-speaker-role { font-size: 11px; line-height: 1.45; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-top: 6px; }
   .hero-form-shell { position: relative; width: 100%; max-width: 520px; justify-self: end; height: 100%; }
   .hero-form-shell::before { content: ''; position: absolute; inset: 22px -18px -22px 36px; border-radius: 28px; background: linear-gradient(135deg, rgba(45,122,82,0.13), rgba(212,135,14,0.12)); z-index: 0; filter: blur(4px); }
   .hero-form-shell .reg-card { position: relative; z-index: 1; height: 100%; }
@@ -155,7 +149,6 @@
   .topics .section-title .accent { color: var(--green-600); font-style: italic; }
   .topics .section-sub { text-align: center; color: var(--slate-500); max-width: 600px; margin: 0 auto 50px; font-size: 15px; }
   .topic-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-  .topic-cards .topic-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .topic-card { background: var(--green-50); border: 1px solid rgba(27,94,63,0.1); border-radius: 16px; padding: 28px 26px; display: flex; gap: 18px; align-items: flex-start; transition: border-color 0.2s, box-shadow 0.2s; }
   .topic-card:hover { border-color: rgba(27,94,63,0.3); box-shadow: var(--shadow-md); }
   .topic-num { flex-shrink: 0; width: 42px; height: 42px; border-radius: 12px; background: var(--white); border: 1.5px solid rgba(27,94,63,0.2); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--green-700); font-style: italic; }
@@ -179,7 +172,7 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 38px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; }
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: minmax(0, 580px); justify-content: center; gap: 24px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
@@ -211,7 +204,7 @@
     .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-main { padding-top: 0; }
     .hero-copy { max-width: none; }
-    .hero-event-strip, .hero-speaker-row { grid-template-columns: 1fr; }
+    .hero-event-strip { grid-template-columns: 1fr; }
     .hero-form-shell { max-width: 640px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
     h1.hero-title { font-size: 34px; }
@@ -230,6 +223,7 @@
     .hero-sub { font-size: 15px; }
     .hero-form-shell::before { inset: 14px 8px -16px 8px; }
     .hero .section-title { font-size: 30px; }
+    .hero-speaker-row { grid-template-columns: 1fr; }
     .countdown-row { gap: 8px; }
     .cd-pill { min-width: 62px; padding: 10px 12px; }
     .cd-num { font-size: 22px; }
@@ -265,13 +259,13 @@
 <div class="ticker">
   <div class="ticker-track">
     <span class="ticker-item">🎁 Register today to win an exclusive gift valued at $900 <span class="sep">|</span></span>
-    <span class="ticker-item">FREE LIVE PANEL — July 8, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
+    <span class="ticker-item">FREE LIVE PANEL — July 29, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
     <span class="ticker-item">Limited seats · Replay sent to all registrants <span class="sep">|</span></span>
-    <span class="ticker-item">Senior pets · Pain management · Quality-of-life conversations <span class="sep">|</span></span>
+    <span class="ticker-item">P&amp;L literacy · Cash flow · Margin leak detection <span class="sep">|</span></span>
     <span class="ticker-item">🎁 Register today to win an exclusive gift valued at $900 <span class="sep">|</span></span>
-    <span class="ticker-item">FREE LIVE PANEL — July 8, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
+    <span class="ticker-item">FREE LIVE PANEL — July 29, 2026 at 8:00 PM EDT <span class="sep">|</span></span>
     <span class="ticker-item">Limited seats · Replay sent to all registrants <span class="sep">|</span></span>
-    <span class="ticker-item">Senior pets · Pain management · Quality-of-life conversations <span class="sep">|</span></span>
+    <span class="ticker-item">P&amp;L literacy · Cash flow · Margin leak detection <span class="sep">|</span></span>
   </div>
 </div>
 
@@ -298,7 +292,7 @@
       <div class="hero-event-strip">
         <div class="event-chip">
           <div class="event-chip-label">Date</div>
-          <div class="event-chip-value">July 8, 2026</div>
+          <div class="event-chip-value">July 29, 2026</div>
         </div>
         <div class="event-chip">
           <div class="event-chip-label">Time</div>
@@ -311,30 +305,21 @@
       </div>
 
       <h1 class="hero-title">
-        The Aging Pet <span class="accent">Playbook:</span> Managing Pain, Mobility, and Quality of Life in <span class="accent">Senior Pets</span>
+        The Numbers You're <span class="accent">Not Reading:</span> Real Visibility Into Profit, Cash Flow &amp; <span class="accent">Hidden Margin Leaks</span>
       </h1>
 
       <p class="hero-sub">
-        As pets live longer, chronic pain and mobility loss are too often caught late. This panel covers early detection and staging, the modern pain-management toolkit, honest quality-of-life conversations, and how senior care builds durable client relationships.
+        Most independent practices run on a 60-90 day financial blind spot. Learn how to read your P&amp;L like an owner — spotting COGS leaks, payroll-to-revenue strain, and service-line margin erosion before they become a cash-flow crisis — and when you need a CPA, a fractional CFO, or a practice analytics platform.
       </p>
 
       <div class="hero-speaker-row">
         <div class="hero-speaker">
           <div class="hero-speaker-photo">
-            <img src="Robin%20Downing_VET_08.07.2026.jpg" alt="Robin Downing" onerror="this.style.display='none';this.parentNode.innerHTML='RD'" />
+            <img src="Ashley%20Ingle_VET_20.07.2026.jpg" alt="Ashley Ingle" onerror="this.style.display='none';this.parentNode.innerHTML='AI'" />
           </div>
           <div class="hero-speaker-meta">
-            <div class="hero-speaker-name">Robin Downing</div>
-            <div class="hero-speaker-role">Hospital Director · The Downing Center for Animal Pain Management</div>
-          </div>
-        </div>
-        <div class="hero-speaker">
-          <div class="hero-speaker-photo">
-            <img src="Ronald%20Sosa_VET_08.07.2026.jpg" alt="Ronald Sosa" onerror="this.style.display='none';this.parentNode.innerHTML='RS'" />
-          </div>
-          <div class="hero-speaker-meta">
-            <div class="hero-speaker-name">Ronald Sosa</div>
-            <div class="hero-speaker-role">Leadership Coach &amp; Founder · Syn-APT</div>
+            <div class="hero-speaker-name">Ashley Ingle, CPA</div>
+            <div class="hero-speaker-role">Founder &amp; CEO · Profit Matters</div>
           </div>
         </div>
       </div>
@@ -408,23 +393,19 @@
     <div class="topic-cards">
       <div class="topic-card">
         <div class="topic-num">1</div>
-        <div class="topic-text">Spotting and staging chronic pain early — why osteoarthritis and mobility loss are underdiagnosed, and how teams catch decline sooner</div>
+        <div class="topic-text">The 5-7 financial numbers a vet practice owner should actually be watching weekly — and the ones that look important but don't predict anything</div>
       </div>
       <div class="topic-card">
         <div class="topic-num">2</div>
-        <div class="topic-text">The modern pain-management toolkit — from daily medical management to rehab, weight, lifestyle, and newer therapies</div>
+        <div class="topic-text">Why most independent practices run on a 60-90 day financial blind spot — and the visibility infrastructure (PIMS reports, monthly close cadence, dashboards) that closes it</div>
       </div>
       <div class="topic-card">
         <div class="topic-num">3</div>
-        <div class="topic-text">Quality-of-life conversations — guiding families through "is my pet comfortable?" honestly, without rushing or distancing</div>
+        <div class="topic-text">Cash flow vs. profit in 2026 — why visit-count declines show up in the P&amp;L 90+ days before they hit the bank, and how to spot it before it's a crisis</div>
       </div>
       <div class="topic-card">
         <div class="topic-num">4</div>
-        <div class="topic-text">Cost, compliance, and the long game — helping owners commit to ongoing senior care and durable wellness relationships</div>
-      </div>
-      <div class="topic-card">
-        <div class="topic-num">5</div>
-        <div class="topic-text">Where the field is heading — emerging treatments and what practice teams should know to stay current without chasing hype</div>
+        <div class="topic-text">The financial advisory layer that's emerging — when independent owners need a CPA vs. a fractional CFO vs. a valuation specialist vs. an analytics platform, and what each actually delivers</div>
       </div>
     </div>
   </div>
@@ -435,23 +416,23 @@
     <div>
       <div class="about-eyebrow">About This Session</div>
       <h2 class="about-title">
-        Catch decline earlier — <span class="accent">guide families through it</span>
+        Read your P&amp;L — <span class="accent">like an owner</span>
       </h2>
       <p class="about-copy">
-        Join the Veterinary Business Institute for a Client Experience panel on managing pain, mobility, and quality of life in senior pets — helping teams catch decline earlier, guide families through quality-of-life decisions, and build durable senior-wellness relationships.
+        Join the Veterinary Business Institute for a candid financial-clarity panel built for independent veterinary practice owners. Most practices run on a 60-90 day financial blind spot — this panel shows you the numbers that actually predict where the practice is headed, and the visibility infrastructure that closes the gap.
       </p>
       <p class="about-copy">
-        As pets live longer, chronic pain and mobility loss are too often caught late. We'll cover early detection and staging, the modern pain-management toolkit, honest quality-of-life conversations, and how senior care builds durable client relationships — without rushing families or distancing your team.
+        We'll break down how to read your P&amp;L like an owner — spotting COGS leaks, payroll-to-revenue strain, and service-line margin erosion before they become a cash-flow crisis — and when you need a CPA, a fractional CFO, a valuation specialist, or a practice analytics platform.
       </p>
     </div>
     <div class="who-box">
       <h4>This Panel Is For You If...</h4>
       <ul>
-        <li>You own, lead, or manage a veterinary practice</li>
-        <li>Your senior patients are caught at decline, not before</li>
-        <li>Quality-of-life conversations feel rushed or inconsistent</li>
-        <li>Owner compliance with ongoing senior care is slipping</li>
-        <li>You want a current pain-management framework, not hype</li>
+        <li>You own or manage an independent veterinary practice</li>
+        <li>Your monthly numbers come weeks (or months) after the fact</li>
+        <li>You can't tell if a slow week is noise or a margin problem</li>
+        <li>You're not sure when you need a CFO vs. a CPA</li>
+        <li>You want a financial dashboard that actually predicts</li>
       </ul>
     </div>
   </div>
@@ -459,37 +440,22 @@
 
 <section class="speakers-section">
   <div class="wrap">
-    <div class="section-eyebrow">Meet Your Panelists</div>
+    <div class="section-eyebrow">Meet Your Panelist</div>
     <h2 class="section-title">Learn From <span class="accent">The Best</span></h2>
 
     <div class="bio-cards">
       <div class="bio-card">
         <div class="bio-card-top">
           <div class="bio-photo">
-            <img src="Robin%20Downing_VET_08.07.2026.jpg" alt="Robin Downing" onerror="this.style.display='none';this.parentNode.innerHTML='RD'" />
+            <img src="Ashley%20Ingle_VET_20.07.2026.jpg" alt="Ashley Ingle" onerror="this.style.display='none';this.parentNode.innerHTML='AI'" />
           </div>
           <div class="bio-meta">
-            <div class="bio-name">Robin Downing, DVM, MS, DAAPM, DACVSMR, CVPP, CCRP</div>
-            <div class="bio-role">Hospital Director · The Downing Center for Animal Pain Management</div>
+            <div class="bio-name">Ashley Ingle, CPA</div>
+            <div class="bio-role">Founder &amp; CEO · Profit Matters</div>
           </div>
         </div>
         <div class="bio-text">
-          Dr. Robin Downing is Hospital Director of The Downing Center for Animal Pain Management. Her recognitions include the WSAVA Excellence in Veterinary Medicine Award, the Erwin Small Distinguished Alumni Award from the University of Illinois, and the AVMA's Leo K. Bustad Companion Animal Veterinarian of the Year Award. With a Master of Science in Clinical Bioethics (Mount Sinai) and a Doctorate in Bioethics (Loyola University Chicago), she is a Fear Free Elite Professional translating clinical bioethics into comprehensive pain management and end-of-life care.
-        </div>
-      </div>
-
-      <div class="bio-card">
-        <div class="bio-card-top">
-          <div class="bio-photo">
-            <img src="Ronald%20Sosa_VET_08.07.2026.jpg" alt="Ronald Sosa" onerror="this.style.display='none';this.parentNode.innerHTML='RS'" />
-          </div>
-          <div class="bio-meta">
-            <div class="bio-name">Ronald Sosa, CVPM, CCFP, PgD-CLD</div>
-            <div class="bio-role">Leadership Coach &amp; Founder · Syn-APT</div>
-          </div>
-        </div>
-        <div class="bio-text">
-          Ronald Sosa is a neuroinclusive leadership coach, international speaker, podcast host, and published author with more than 20 years in veterinary medicine and leadership. Drawing on his lived experience with ADHD and a later autism diagnosis, he helps veterinary professionals break burnout cycles and build sustainable, authentic ways of leading. As founder of Syn-APT he provides neuroinclusive leadership training, workplace strategy consulting, and coaching, and he hosts the Left Unattended Podcast.
+          Ashley Ingle is the founder and CEO of Profit Matters, where she helps business owners understand their numbers without making accounting feel boring, scary, or painfully corporate. As a CPA, entrepreneur, mom of four, and lover of big ideas, she brings a mix of strategy, humor, and real-life business experience to every client relationship. Her mission is simple: make finances feel clear, useful, and maybe even a little fun.
         </div>
       </div>
     </div>
@@ -498,7 +464,7 @@
 
 <section class="cta-band">
   <div class="wrap">
-    <h3>Ready to Build a <span class="accent">Senior-Wellness Relationship?</span></h3>
+    <h3>Ready to Close the <span class="accent">Financial Blind Spot?</span></h3>
     <p>Free registration · Live Q&amp;A · Replay included · $900 gift giveaway</p>
     <a href="#register" class="cta-btn-lg">Reserve My Spot →</a>
   </div>
@@ -525,13 +491,10 @@
     const form = e.target;
     const btn  = document.getElementById('reg-btn');
     const msg  = document.getElementById('reg-msg');
-
     if (!form.checkValidity()) { form.reportValidity(); return; }
-
     const source_id = new URLSearchParams(window.location.search).get('s') || '';
-
     const data = {
-      event_key:   'event_2026_07_08',
+      event_key:   'event_2026_07_29',
       first_name:  form.first_name.value.trim(),
       last_name:   form.last_name.value.trim(),
       email:       form.email.value.trim(),
@@ -540,32 +503,24 @@
       source_id:   source_id,
       source_name: '',
     };
-
     btn.disabled    = true;
     btn.textContent = 'Registering…';
     msg.style.display = 'none';
-
     if (LOCAL_TEST_MODE) {
       console.log('%c[LOCAL TEST] Payload:', 'color:#38996A;font-weight:bold;', data);
       setTimeout(() => {
         msg.style.cssText = 'display:block;margin-top:14px;padding:12px 16px;border-radius:10px;font-size:14px;font-weight:600;text-align:center;background:#d4edda;color:#155724;border:1px solid #c3e6cb;';
         msg.textContent = '✓ [TEST] Payload captured — check browser console.';
-        btn.disabled    = false;
+        btn.disabled = false;
         btn.textContent = 'Register Free — Save My Seat →';
         form.reset();
       }, 800);
       return;
     }
-
     try {
-      await fetch(APPS_SCRIPT_URL, {
-        method:  'POST',
-        mode:    'no-cors',
-        headers: { 'Content-Type': 'text/plain' },
-        body:    JSON.stringify(data),
-      });
+      await fetch(APPS_SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(data) });
       form.querySelectorAll('input, textarea').forEach(i => i.disabled = true);
-      btn.disabled    = true;
+      btn.disabled = true;
       btn.textContent = '✓ You\'re Registered!';
       btn.style.background = 'linear-gradient(135deg, #28a745, #1e7e34)';
       btn.style.boxShadow  = '0 10px 30px rgba(40,167,69,0.35)';
@@ -575,13 +530,13 @@
       msg.style.cssText = 'display:block;margin-top:14px;padding:12px 16px;border-radius:10px;font-size:14px;font-weight:600;text-align:center;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;';
       msg.textContent = 'Something went wrong. Please try again or contact us directly.';
       console.error('Registration error:', err);
-      btn.disabled    = false;
+      btn.disabled = false;
       btn.textContent = 'Register Free — Save My Seat →';
     }
   });
 
-  // ── COUNTDOWN — July 8, 2026 8:00 PM EDT (UTC-4) = July 9 00:00 UTC ──
-  const target = new Date('2026-07-09T00:00:00Z').getTime();
+  // ── COUNTDOWN — July 29, 2026 8:00 PM EDT (UTC-4) = July 30 00:00 UTC ──
+  const target = new Date('2026-07-30T00:00:00Z').getTime();
   function tick() {
     const diff = Math.max(0, target - Date.now());
     if (diff === 0) {

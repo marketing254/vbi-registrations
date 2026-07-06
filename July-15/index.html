@@ -207,29 +207,29 @@
   }
   .hero-speaker-row {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
     margin: 24px 0 0;
   }
   .hero-speaker {
     background: rgba(255,255,255,0.78);
     border: 1px solid rgba(20,71,46,0.08);
     border-radius: 18px;
-    padding: 16px 18px;
+    padding: 14px 14px;
     box-shadow: var(--shadow-sm);
     backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     min-height: 94px;
   }
   .hero-speaker-photo {
-    width: 58px;
-    height: 58px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
-    border: 3px solid rgba(77,184,130,0.7);
+    border: 3px solid rgba(126,217,163,0.7);
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     background: linear-gradient(135deg, var(--green-100), var(--green-50));
   }
@@ -239,20 +239,23 @@
     object-fit: cover;
     object-position: center top;
   }
+  .hero-speaker-meta { min-width: 0; }
   .hero-speaker-name {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 22px;
-    line-height: 1.05;
+    font-size: 18px;
+    line-height: 1.1;
     color: var(--green-800);
+    word-break: break-word;
   }
   .hero-speaker-role {
-    font-size: 11px;
-    line-height: 1.45;
+    font-size: 10px;
+    line-height: 1.4;
     text-transform: uppercase;
-    letter-spacing: 1.1px;
+    letter-spacing: 0.8px;
     color: var(--slate-500);
     font-weight: 700;
-    margin-top: 6px;
+    margin-top: 5px;
+    word-break: break-word;
   }
   .hero-form-shell {
     position: relative;
@@ -717,7 +720,7 @@
     line-height: 1.15;
   }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; }
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .bio-card {
     background: var(--white);
     border-radius: 20px;
@@ -813,6 +816,7 @@
     h1.hero-title { font-size: 38px; }
     .hero-grid { gap: 36px; }
     .hero-form-shell::before { inset: 18px -10px -18px 24px; }
+    .bio-cards { grid-template-columns: repeat(2, 1fr); }
   }
 
   /* Tablet portrait */
@@ -975,6 +979,16 @@
             <div class="hero-speaker-role">Veterinary Medical Oncologist · Founder, Pet Cancer Care Consulting</div>
           </div>
         </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Rebecca%20May_VET_15.07.2026.jpg" alt="Rebecca May"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='RM'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Rebecca May, CVPM</div>
+            <div class="hero-speaker-role">Hospital Administrator · Town 'N Country Animal Hospital</div>
+          </div>
+        </div>
       </div>
 
       <div class="countdown-row" id="countdown">
@@ -1135,6 +1149,22 @@
         </div>
         <div class="bio-text">
           Dr. Rachel Venable is a veterinary medical oncologist and the founder of Pet Cancer Care Consulting, a teleconsulting service that helps pet owners and veterinarians navigate cancer treatment decisions. She earned her veterinary degree cum laude from the University of Missouri, completed an internship at the University of Georgia, and a medical oncology residency at Colorado State University, where she also earned a Master's degree. A respected speaker and published author, she serves as the remote oncologist for Virginia Tech and consults for the Veterinary Information Network (VIN). She is dedicated to a team-based approach, working closely with pet owners and veterinarians to provide compassionate, individualized cancer care.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Rebecca%20May_VET_15.07.2026.jpg" alt="Rebecca May"
+                 onerror="this.style.display='none';this.parentNode.innerHTML='RM'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Rebecca May, CVPM, CCFP, Elite FFCP</div>
+            <div class="bio-role">Hospital Administrator · Town 'N Country Animal Hospital</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Rebecca May is a veterinary hospital administrator, speaker, and leadership strategist with more than a decade of experience helping veterinary practices strengthen operations, develop leaders, and build high-performing teams. She believes leadership isn't about having all the answers — it's about navigating uncertainty with clarity, building resilient teams, and creating practices where people can do their best work and sustain it for the long term. Rebecca partners with veterinary leaders, practice owners, and teams to improve culture, develop talent, and create practices that thrive through change.
         </div>
       </div>
     </div>

@@ -87,7 +87,7 @@
   .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; line-height: 1.15; color: var(--green-800); }
-  .hero-speaker-row { display: grid; grid-template-columns: minmax(0, 360px); gap: 14px; margin: 24px 0 0; }
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
   .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
   .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
@@ -175,7 +175,7 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
-  .bio-cards { display: grid; grid-template-columns: minmax(0, 580px); justify-content: center; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
@@ -207,7 +207,8 @@
     .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-main { padding-top: 0; }
     .hero-copy { max-width: none; }
-    .hero-event-strip { grid-template-columns: 1fr; }
+    .hero-event-strip,
+    .hero-speaker-row { grid-template-columns: 1fr; }
     .hero-form-shell { max-width: 640px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
     h1.hero-title { font-size: 36px; }
@@ -226,7 +227,6 @@
     .hero-sub { font-size: 15px; }
     .hero-form-shell::before { inset: 14px 8px -16px 8px; }
     .hero .section-title { font-size: 30px; }
-    .hero-speaker-row { grid-template-columns: 1fr; }
     .countdown-row { gap: 8px; }
     .cd-pill { min-width: 62px; padding: 10px 12px; }
     .cd-num { font-size: 24px; }
@@ -323,6 +323,15 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Mark Massaro, DVM</div>
             <div class="hero-speaker-role">Founder · NCVC LinkedIn Group · The Digital DVM</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Ava%20Khodadadeh_VET_05.08.2026.jpg" alt="Ava Khodadadeh" onerror="this.style.display='none';this.parentNode.innerHTML='AK'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Ava Khodadadeh, DVM</div>
+            <div class="hero-speaker-role">Veterinarian · Culture &amp; Practice Management</div>
           </div>
         </div>
       </div>
@@ -447,7 +456,7 @@
 
 <section class="speakers-section">
   <div class="wrap">
-    <div class="section-eyebrow">Meet Your Panelist</div>
+    <div class="section-eyebrow">Meet Your Panelists</div>
     <h2 class="section-title">Learn From <span class="accent">The Best</span></h2>
 
     <div class="bio-cards">
@@ -463,6 +472,21 @@
         </div>
         <div class="bio-text">
           Dr. Mark Massaro is the founder and moderator of "NCVC: Non-Clinical Veterinary Careers" on LinkedIn. After stopping practice due to mental-health concerns and spending several years exploring non-clinical options — particularly veterinary software — he has since returned to the clinic as a veterinary technician while maintaining the LinkedIn group to help others navigate their own non-clinical journey. He also does veterinary software consulting on the side under the name "The Digital DVM."
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Ava%20Khodadadeh_VET_05.08.2026.jpg" alt="Ava Khodadadeh" onerror="this.style.display='none';this.parentNode.innerHTML='AK'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Ava Khodadadeh, DVM</div>
+            <div class="bio-role">Veterinarian · Culture &amp; Practice Management</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Dr. Ava Khodadadeh is a veterinarian passionate about veterinary clinical culture, practice management, and improving interpersonal relationships within veterinary teams. She brings a practitioner's lens to the conversation about how workplace culture and team dynamics shape retention, burnout, and long-term career sustainability in clinical practice.
         </div>
       </div>
     </div>

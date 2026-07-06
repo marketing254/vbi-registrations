@@ -87,7 +87,7 @@
   .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; line-height: 1.15; color: var(--green-800); }
-  .hero-speaker-row { display: grid; grid-template-columns: minmax(0, 360px); gap: 14px; margin: 24px 0 0; }
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
   .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
   .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(77,184,130,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
@@ -172,7 +172,7 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 38px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; }
-  .bio-cards { display: grid; grid-template-columns: minmax(0, 580px); justify-content: center; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
@@ -204,7 +204,8 @@
     .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-main { padding-top: 0; }
     .hero-copy { max-width: none; }
-    .hero-event-strip { grid-template-columns: 1fr; }
+    .hero-event-strip,
+    .hero-speaker-row { grid-template-columns: 1fr; }
     .hero-form-shell { max-width: 640px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
     h1.hero-title { font-size: 34px; }
@@ -223,7 +224,6 @@
     .hero-sub { font-size: 15px; }
     .hero-form-shell::before { inset: 14px 8px -16px 8px; }
     .hero .section-title { font-size: 30px; }
-    .hero-speaker-row { grid-template-columns: 1fr; }
     .countdown-row { gap: 8px; }
     .cd-pill { min-width: 62px; padding: 10px 12px; }
     .cd-num { font-size: 22px; }
@@ -320,6 +320,33 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Ashley Ingle, CPA</div>
             <div class="hero-speaker-role">Founder &amp; CEO · Profit Matters</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Devin%20Corban_VET_29.07.2026.jpg" alt="Devin Corban" onerror="this.style.display='none';this.parentNode.innerHTML='DC'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Devin Corban</div>
+            <div class="hero-speaker-role">Chief Executive Officer · Veterinary Solut!ons Services</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Martin%20Traub-Werner_VET_29.07.2026.jpg" alt="Martin Traub-Werner" onerror="this.style.display='none';this.parentNode.innerHTML='MT'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Martin Traub-Werner</div>
+            <div class="hero-speaker-role">Founder &amp; CEO · VetBooks</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Nicole%20Creed_VET_29.07.2026.jpg" alt="Nicole Creed" onerror="this.style.display='none';this.parentNode.innerHTML='NC'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Nicole Creed</div>
+            <div class="hero-speaker-role">Founder &amp; Director · EquiCare</div>
           </div>
         </div>
       </div>
@@ -440,7 +467,7 @@
 
 <section class="speakers-section">
   <div class="wrap">
-    <div class="section-eyebrow">Meet Your Panelist</div>
+    <div class="section-eyebrow">Meet Your Panelists</div>
     <h2 class="section-title">Learn From <span class="accent">The Best</span></h2>
 
     <div class="bio-cards">
@@ -456,6 +483,51 @@
         </div>
         <div class="bio-text">
           Ashley Ingle is the founder and CEO of Profit Matters, where she helps business owners understand their numbers without making accounting feel boring, scary, or painfully corporate. As a CPA, entrepreneur, mom of four, and lover of big ideas, she brings a mix of strategy, humor, and real-life business experience to every client relationship. Her mission is simple: make finances feel clear, useful, and maybe even a little fun.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Devin%20Corban_VET_29.07.2026.jpg" alt="Devin Corban" onerror="this.style.display='none';this.parentNode.innerHTML='DC'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Devin Corban</div>
+            <div class="bio-role">Chief Executive Officer · Veterinary Solut!ons Services</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Devin Corban is the CEO of Veterinary Solut!ons Services (VSS), a national veterinary consulting firm that partners with independent practices, practice groups, and veterinary organizations to improve operational performance, profitability, leadership, and long-term enterprise value. He has worked with hospitals across the country to help owners identify opportunities for sustainable growth through practical, data-driven business strategies. Prior to leading VSS, Devin held leadership positions with Banfield Pet Hospital, Netflix, and Capital One focused on operations, business performance, and organizational development. He is passionate about helping veterinary leaders turn financial and operational data into meaningful action.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Martin%20Traub-Werner_VET_29.07.2026.jpg" alt="Martin Traub-Werner" onerror="this.style.display='none';this.parentNode.innerHTML='MT'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Martin Traub-Werner</div>
+            <div class="bio-role">Founder &amp; CEO · VetBooks</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Martin is an entrepreneur who loves the business of business — putting the pieces together to create meaningful workplaces and add value for clients. He's currently the founder and CEO of VetBooks, the industry's leading veterinary bookkeeping firm. He also advises several companies in the veterinary space and passionately advocates for independent veterinary practices. When he's not working, he likes to hike and ski and hang out with his wife, two grown kids and lovable street-dog named Austin.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Nicole%20Creed_VET_29.07.2026.jpg" alt="Nicole Creed" onerror="this.style.display='none';this.parentNode.innerHTML='NC'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Nicole Creed</div>
+            <div class="bio-role">Founder &amp; Director · EquiCare</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Nicole Creed is the founder of EquiCare, the connected horse-management platform modernising the way riders, owners, and stables manage their horses, and co-founder of The Riders Retreat, an equestrian wellness event series. After years of competing internationally across Australia, the US, and France, she built EquiCare to solve a problem she lived every day as a rider — no proper system for managing a horse's health, training, competitions, and goals in one place. Before EquiCare she spent years in large-scale event production and management, running international events, music festivals, and creative projects. She is currently expanding EquiCare into the UK, European, and US markets.
         </div>
       </div>
     </div>

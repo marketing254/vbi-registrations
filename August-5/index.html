@@ -87,13 +87,13 @@
   .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; line-height: 1.15; color: var(--green-800); }
-  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
-  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
-  .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0 0; }
+  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 14px 14px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 12px; min-height: 94px; }
+  .hero-speaker-photo { width: 54px; height: 54px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .hero-speaker-meta { min-width: 0; }
-  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; line-height: 1.1; color: var(--green-800); font-weight: 600; }
-  .hero-speaker-role { font-size: 11px; line-height: 1.45; text-transform: uppercase; letter-spacing: 1px; color: var(--slate-500); font-weight: 700; margin-top: 6px; word-break: break-word; }
+  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; line-height: 1.1; color: var(--green-800); font-weight: 600; word-break: break-word; }
+  .hero-speaker-role { font-size: 10px; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.8px; color: var(--slate-500); font-weight: 700; margin-top: 5px; word-break: break-word; }
   .hero-form-shell { position: relative; width: 100%; max-width: 520px; justify-self: end; height: 100%; }
   .hero-form-shell::before { content: ''; position: absolute; inset: 22px -18px -22px 36px; border-radius: 28px; background: linear-gradient(135deg, rgba(47,107,69,0.13), rgba(245,179,1,0.12)); z-index: 0; filter: blur(4px); }
   .hero-form-shell .reg-card { position: relative; z-index: 1; height: 100%; }
@@ -175,7 +175,7 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
@@ -201,6 +201,7 @@
     h1.hero-title { font-size: 40px; }
     .hero-grid { gap: 36px; }
     .hero-form-shell::before { inset: 18px -10px -18px 24px; }
+    .bio-cards { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 960px) {
     .hero { padding: 48px 0 56px; }
@@ -332,6 +333,15 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Ava Khodadadeh, DVM</div>
             <div class="hero-speaker-role">Veterinarian · Culture &amp; Practice Management</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Caroline%20Kercheval_VET_05.08.2026.jpg" alt="Caroline Kercheval" onerror="this.style.display='none';this.parentNode.innerHTML='CK'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Caroline Kercheval, LVT</div>
+            <div class="hero-speaker-role">Talent Manager &amp; LVT · VEG ER for Pets</div>
           </div>
         </div>
       </div>
@@ -487,6 +497,21 @@
         </div>
         <div class="bio-text">
           Dr. Ava Khodadadeh is a veterinarian passionate about veterinary clinical culture, practice management, and improving interpersonal relationships within veterinary teams. She brings a practitioner's lens to the conversation about how workplace culture and team dynamics shape retention, burnout, and long-term career sustainability in clinical practice.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Caroline%20Kercheval_VET_05.08.2026.jpg" alt="Caroline Kercheval" onerror="this.style.display='none';this.parentNode.innerHTML='CK'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Caroline Kercheval, LVT</div>
+            <div class="bio-role">Talent Manager &amp; LVT · VEG ER for Pets</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Born and raised in West Virginia, Caroline has been in veterinary medicine since 2005 and a credentialed veterinary technician since 2011. Her experience spans general practice, specialty, emergency, exotics (including elephants), shelter medicine, and leadership — all driven by a strong passion for patient care and veterinary technician advocacy. Outside of vet med, she's a lifelong equestrian and dedicated reptile lover.
         </div>
       </div>
     </div>

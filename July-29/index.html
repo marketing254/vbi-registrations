@@ -394,6 +394,10 @@
             <input type="tel" name="phone" placeholder="+1 (555) 123-4567" autocomplete="tel" required />
           </div>
           <div class="field">
+            <label>Practice Name <span class="req">*</span></label>
+            <input type="text" name="practice_name" placeholder="Your veterinary practice" autocomplete="organization" required />
+          </div>
+          <div class="field">
             <label>What questions do you have? <span style="color:var(--slate-300);font-weight:400;">(optional)</span></label>
             <textarea name="questions" placeholder="Share any questions you'd like the panel to address…"></textarea>
           </div>
@@ -571,6 +575,7 @@
       last_name:   form.last_name.value.trim(),
       email:       form.email.value.trim(),
       phone:       form.phone.value.trim(),
+      practice_name: form.practice_name.value.trim(),
       questions:   form.questions.value.trim(),
       source_id:   source_id,
       source_name: '',

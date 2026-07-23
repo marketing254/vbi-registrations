@@ -87,7 +87,7 @@
   .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; line-height: 1.15; color: var(--green-800); }
-  .hero-speaker-row { display: grid; grid-template-columns: minmax(0, 360px); gap: 14px; margin: 24px 0 0; }
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
   .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
   .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
@@ -173,7 +173,7 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
-  .bio-cards { display: grid; grid-template-columns: minmax(0, 580px); justify-content: center; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
@@ -205,7 +205,8 @@
     .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-main { padding-top: 0; }
     .hero-copy { max-width: none; }
-    .hero-event-strip { grid-template-columns: 1fr; }
+    .hero-event-strip,
+    .hero-speaker-row { grid-template-columns: 1fr; }
     .hero-form-shell { max-width: 640px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
     h1.hero-title { font-size: 36px; }
@@ -224,7 +225,6 @@
     .hero-sub { font-size: 15px; }
     .hero-form-shell::before { inset: 14px 8px -16px 8px; }
     .hero .section-title { font-size: 30px; }
-    .hero-speaker-row { grid-template-columns: 1fr; }
     .countdown-row { gap: 8px; }
     .cd-pill { min-width: 62px; padding: 10px 12px; }
     .cd-num { font-size: 24px; }
@@ -321,6 +321,15 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Paul Camilo, CVPM</div>
             <div class="hero-speaker-role">Founder &amp; Business Development Consultant · Veterinary Consultation Services</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Emily%20Hoppmann_VET_03.09.2026.jpg" alt="Emily Hoppmann" onerror="this.style.display='none';this.parentNode.innerHTML='EH'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Emily Hoppmann, DVM</div>
+            <div class="hero-speaker-role">Founder · Elgin Veterinary Hospital · Mentor &amp; Educator</div>
           </div>
         </div>
       </div>
@@ -449,7 +458,7 @@
 
 <section class="speakers-section">
   <div class="wrap">
-    <div class="section-eyebrow">Meet Your Panelist</div>
+    <div class="section-eyebrow">Meet Your Panelists</div>
     <h2 class="section-title">Learn From <span class="accent">The Best</span></h2>
 
     <div class="bio-cards">
@@ -465,6 +474,21 @@
         </div>
         <div class="bio-text">
           Paul Camilo, CVPM, is the Founder of Veterinary Consultation Services, LLC and a business development consultant with more than 22 years of experience in veterinary practice management. He holds a degree in Business Administration and specializes in helping practice owners and industry companies improve communication, technology adoption, and dental service growth. Previously a long-time practice administrator and highly sought-after national conference speaker, Paul now focuses full-time on advising multi-doctor practices and veterinary companies on operational excellence and revenue strategies.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Emily%20Hoppmann_VET_03.09.2026.jpg" alt="Emily Hoppmann" onerror="this.style.display='none';this.parentNode.innerHTML='EH'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Emily Hoppmann, DVM</div>
+            <div class="bio-role">Founder · Elgin Veterinary Hospital · Mentor &amp; Educator</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Dr. Emily Hoppmann spent two decades as a small-animal and exotic-animal solo practitioner, founding and running Elgin Veterinary Hospital in Columbia, SC — a practice she built to deliver high-quality care where clients, patients, and staff all felt like family. A University of Georgia graduate with a focus on exotic animals and a research background in population genetics, she paired clinical excellence with the real day-to-day work of small-business ownership. After health challenges reshaped her path, Emily now focuses on education and giving back — mentoring small-business owners, entrepreneurs, and veterinarians at every stage of their professional journey.
         </div>
       </div>
     </div>

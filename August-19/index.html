@@ -87,13 +87,13 @@
   .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; line-height: 1.15; color: var(--green-800); }
-  .hero-speaker-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0 0; }
-  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 14px 14px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 12px; min-height: 94px; }
-  .hero-speaker-photo { width: 54px; height: 54px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
+  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
+  .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .hero-speaker-meta { min-width: 0; }
-  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; line-height: 1.1; color: var(--green-800); word-break: break-word; }
-  .hero-speaker-role { font-size: 10px; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.8px; color: var(--slate-500); font-weight: 700; margin-top: 5px; word-break: break-word; }
+  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.1; color: var(--green-800); word-break: break-word; }
+  .hero-speaker-role { font-size: 10.5px; line-height: 1.4; text-transform: uppercase; letter-spacing: 1px; color: var(--slate-500); font-weight: 700; margin-top: 5px; word-break: break-word; }
   .hero-form-shell { position: relative; width: 100%; max-width: 520px; justify-self: end; height: 100%; }
   .hero-form-shell::before { content: ''; position: absolute; inset: 22px -18px -22px 36px; border-radius: 28px; background: linear-gradient(135deg, rgba(47,107,69,0.13), rgba(245,179,1,0.12)); z-index: 0; filter: blur(4px); }
   .hero-form-shell .reg-card { position: relative; z-index: 1; height: 100%; }
@@ -173,7 +173,7 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
-  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
@@ -199,7 +199,6 @@
     h1.hero-title { font-size: 40px; }
     .hero-grid { gap: 36px; }
     .hero-form-shell::before { inset: 18px -10px -18px 24px; }
-    .bio-cards { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 960px) {
     .hero { padding: 48px 0 56px; }
@@ -330,15 +329,6 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Genevieve Frederick</div>
             <div class="hero-speaker-role">Founder &amp; President · Feeding Pets of the Homeless</div>
-          </div>
-        </div>
-        <div class="hero-speaker">
-          <div class="hero-speaker-photo">
-            <img src="Vanessa%20Waite_VET_19.08.2026.jpg" alt="Vanessa Waite" onerror="this.style.display='none';this.parentNode.innerHTML='VW'" />
-          </div>
-          <div class="hero-speaker-meta">
-            <div class="hero-speaker-name">Dr Vanessa Waite</div>
-            <div class="hero-speaker-role">Founder &amp; Clinical Director · The Vet Station Molesey</div>
           </div>
         </div>
       </div>
@@ -501,20 +491,6 @@
         </div>
       </div>
 
-      <div class="bio-card">
-        <div class="bio-card-top">
-          <div class="bio-photo">
-            <img src="Vanessa%20Waite_VET_19.08.2026.jpg" alt="Vanessa Waite" onerror="this.style.display='none';this.parentNode.innerHTML='VW'" />
-          </div>
-          <div class="bio-meta">
-            <div class="bio-name">Dr Vanessa Waite, VetMB BA MA CertAVP CertGP DI MRCVS</div>
-            <div class="bio-role">Founder &amp; Clinical Director · The Vet Station Molesey</div>
-          </div>
-        </div>
-        <div class="bio-text">
-          Dr Vanessa Waite — widely known as Dr Nessa — is the founder and Clinical Director of The Vet Station Molesey, an award-winning independent practice in Surrey. A University of Cambridge graduate (2008) with over 18 years in small-animal practice, she has advanced expertise in soft-tissue surgery, orthopaedics, and diagnostic imaging, and holds a Certificate in Advanced Veterinary Practice. She's a recognised media commentator — featured on Channel 4's The Dog Fixers, BBC Panorama, and GB News — and hosts the veterinary podcast Under the Fur. She founded The Vet Station Molesey on the belief that veterinary care should be compassionate, transparent, and community-focused.
-        </div>
-      </div>
     </div>
   </div>
 </section>

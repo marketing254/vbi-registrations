@@ -88,14 +88,14 @@
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; line-height: 1.15; color: var(--green-800); }
 
-  /* 2-speaker hero row */
-  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
-  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
-  .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--green-700); font-weight: 600; }
+  /* 3-speaker hero row */
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0 0; }
+  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 16px; padding: 14px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 11px; min-height: 84px; }
+  .hero-speaker-photo { width: 54px; height: 54px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--green-700); font-weight: 600; }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .hero-speaker-meta { min-width: 0; }
-  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.1; color: var(--green-800); font-weight: 600; word-break: break-word; }
-  .hero-speaker-role { font-size: 10.5px; line-height: 1.4; text-transform: uppercase; letter-spacing: 1px; color: var(--slate-500); font-weight: 700; margin-top: 5px; word-break: break-word; }
+  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; line-height: 1.1; color: var(--green-800); font-weight: 600; word-break: break-word; }
+  .hero-speaker-role { font-size: 10px; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.8px; color: var(--slate-500); font-weight: 700; margin-top: 4px; word-break: break-word; }
 
   .hero-form-shell { position: relative; width: 100%; max-width: 520px; justify-self: end; height: 100%; }
   .hero-form-shell::before { content: ''; position: absolute; inset: 22px -18px -22px 36px; border-radius: 28px; background: linear-gradient(135deg, rgba(47,107,69,0.13), rgba(245,179,1,0.12)); z-index: 0; filter: blur(4px); }
@@ -177,16 +177,16 @@
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
 
-  /* 2-speaker bio cards */
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  /* 3-speaker bio cards */
+  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-  .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
-  .bio-photo { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--green-100), var(--green-50)); border: 3px solid var(--green-400); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--green-700); flex-shrink: 0; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); font-weight: 600; }
+  .bio-card-top { display: flex; gap: 16px; padding: 22px 22px 0; align-items: center; }
+  .bio-photo { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--green-100), var(--green-50)); border: 3px solid var(--green-400); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--green-700); flex-shrink: 0; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); font-weight: 600; }
   .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-  .bio-name { font-size: 18px; font-weight: 700; color: var(--slate-900); margin-bottom: 2px; }
-  .bio-role { font-size: 12px; color: var(--green-600); font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.5px; }
-  .bio-text { padding: 16px 24px 24px; font-size: 13px; color: var(--slate-500); line-height: 1.65; }
+  .bio-name { font-size: 17px; font-weight: 700; color: var(--slate-900); margin-bottom: 2px; line-height: 1.2; }
+  .bio-role { font-size: 11.5px; color: var(--green-600); font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.5px; }
+  .bio-text { padding: 14px 22px 22px; font-size: 13px; color: var(--slate-500); line-height: 1.65; }
 
   .cta-band { padding: 80px 0; background: var(--white); text-align: center; border-top: 1px solid var(--slate-100); }
   .cta-band h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 44px; color: var(--slate-900); margin-bottom: 10px; font-weight: 600; }
@@ -344,6 +344,15 @@
             <div class="hero-speaker-role">Founder · PracticeDen / R.D. Barnett PLLC</div>
           </div>
         </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Dalia%20Cantor_VET_14.10.2026.jpg" alt="Dalia Cantor" onerror="this.style.display='none';this.parentNode.innerHTML='DC'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Dalia Cantor, CPA, CVA</div>
+            <div class="hero-speaker-role">Founder &amp; CEO · CPA Solutions</div>
+          </div>
+        </div>
       </div>
 
       <div class="countdown-row" id="countdown">
@@ -456,7 +465,7 @@
         Join the Veterinary Business Institute for a practical panel on the year-end practice audit — finding the revenue you're leaving on the table in 2026. Missed charges, fee-schedule drift, and inventory shrinkage quietly compound into six-figure gaps that most practices never quantify. This panel walks through the concrete decisions owners can take next.
       </p>
       <p class="about-copy">
-        Two finance experts — a veterinary CFO focused on margin recovery and a CPA/PFS with two decades advising independent owners — break down the short audit ritual that surfaces the money before it compounds, and the P&amp;L reading habits that separate operators from bookkeepers.
+        Three finance experts — a veterinary CFO focused on margin recovery, a CPA/PFS with two decades advising independent owners, and a CPA/CVA with 25+ years in healthcare accounting, M&amp;A, and practice valuations — break down the short audit ritual that surfaces the money before it compounds, and the P&amp;L reading habits that separate operators from bookkeepers.
       </p>
     </div>
     <div class="who-box">
@@ -505,6 +514,21 @@
         </div>
         <div class="bio-text">
           Dean Barnett is a financial advocate for independent veterinary practice owners. After spending his formative public accounting years with a Big Four firm, he founded R.D. Barnett PLLC and PracticeDen, the firm's dedicated veterinary brand. With more than 20 years as a CPA and over a decade as a firm owner, he believes veterinary entrepreneurs deserve guidance beyond a tax return and a history lesson. He helps them understand their numbers, make confident decisions, and reduce taxes thoughtfully.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Dalia%20Cantor_VET_14.10.2026.jpg" alt="Dalia Cantor" onerror="this.style.display='none';this.parentNode.innerHTML='DC'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Dalia Cantor, CPA, CVA</div>
+            <div class="bio-role">Founder &amp; CEO · CPA Solutions Inc.</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Dalia Cantor, CPA, CVA, is the Founder and CEO of CPA Solutions, where she advises businesses in the healthcare industry on financial strategy, tax planning, and practice performance improvement. With over 25 years of experience, she brings deep expertise in healthcare accounting, mergers and acquisitions, valuation, and operational consulting, helping medical practices maximize profitability and long-term value.
         </div>
       </div>
 

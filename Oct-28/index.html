@@ -87,13 +87,13 @@
   .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(20,71,46,0.08); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
   .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
   .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; line-height: 1.15; color: var(--green-800); }
-  .hero-speaker-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0 0; }
-  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 16px; padding: 14px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 11px; min-height: 84px; }
-  .hero-speaker-photo { width: 54px; height: 54px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 24px 0 0; }
+  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(20,71,46,0.08); border-radius: 14px; padding: 12px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 10px; min-height: 78px; }
+  .hero-speaker-photo { width: 48px; height: 48px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid rgba(126,217,163,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); }
   .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .hero-speaker-meta { min-width: 0; }
-  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; line-height: 1.1; color: var(--green-800); font-weight: 600; word-break: break-word; }
-  .hero-speaker-role { font-size: 10px; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.8px; color: var(--slate-500); font-weight: 700; margin-top: 4px; word-break: break-word; }
+  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 16px; line-height: 1.1; color: var(--green-800); font-weight: 600; word-break: break-word; }
+  .hero-speaker-role { font-size: 9.5px; line-height: 1.3; text-transform: uppercase; letter-spacing: 0.6px; color: var(--slate-500); font-weight: 700; margin-top: 3px; word-break: break-word; }
   .hero-form-shell { position: relative; width: 100%; max-width: 520px; justify-self: end; height: 100%; }
   .hero-form-shell::before { content: ''; position: absolute; inset: 22px -18px -22px 36px; border-radius: 28px; background: linear-gradient(135deg, rgba(47,107,69,0.13), rgba(245,179,1,0.12)); z-index: 0; filter: blur(4px); }
   .hero-form-shell .reg-card { position: relative; z-index: 1; height: 100%; }
@@ -173,15 +173,15 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
-  .bio-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .bio-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-  .bio-card-top { display: flex; gap: 16px; padding: 22px 22px 0; align-items: center; }
-  .bio-photo { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--green-100), var(--green-50)); border: 3px solid var(--green-400); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--green-700); flex-shrink: 0; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .bio-card-top { display: flex; flex-direction: column; gap: 12px; padding: 20px 18px 0; align-items: flex-start; }
+  .bio-photo { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--green-100), var(--green-50)); border: 3px solid var(--green-400); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--green-700); flex-shrink: 0; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
   .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-  .bio-name { font-size: 17px; font-weight: 700; color: var(--slate-900); margin-bottom: 2px; line-height: 1.2; }
-  .bio-role { font-size: 11.5px; color: var(--green-600); font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.5px; }
-  .bio-text { padding: 14px 22px 22px; font-size: 13px; color: var(--slate-500); line-height: 1.65; }
+  .bio-name { font-size: 15px; font-weight: 700; color: var(--slate-900); margin-bottom: 2px; line-height: 1.2; }
+  .bio-role { font-size: 10.5px; color: var(--green-600); font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.4px; }
+  .bio-text { padding: 12px 18px 20px; font-size: 12.5px; color: var(--slate-500); line-height: 1.6; }
 
   .cta-band { padding: 80px 0; background: var(--white); text-align: center; border-top: 1px solid var(--slate-100); }
   .cta-band h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 44px; color: var(--slate-900); margin-bottom: 10px; font-weight: 600; }
@@ -217,7 +217,7 @@
     .hero-form-shell { max-width: 640px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
     h1.hero-title { font-size: 36px; }
-    .bio-cards { grid-template-columns: 1fr; }
+    .bio-cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .topic-cards { grid-template-columns: 1fr; }
     section.topics, .about-section, .speakers-section { padding: 60px 0; }
     .cta-band { padding: 60px 0; }
@@ -241,6 +241,7 @@
     form .row { grid-template-columns: 1fr; }
     .form-note { grid-template-columns: 1fr; }
     .topics .section-title, .about-title, .speakers-section .section-title { font-size: 30px; }
+    .bio-cards { grid-template-columns: 1fr; }
     .topic-card { padding: 20px 18px; }
     .cta-band h3 { font-size: 28px; }
     .cta-btn-lg { padding: 16px 32px; font-size: 15px; }
@@ -346,6 +347,15 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Kellie Olah, SPHR, CVPM, SHRM-SCP</div>
             <div class="hero-speaker-role">HR Consultant · Veterinary Business Advisors</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Rae%20Hutchins_VET_28.10.2026.jpg" alt="Dr. Rae Hutchins" onerror="this.style.display='none';this.parentNode.innerHTML='RH'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Dr. Rae Hutchins, DVM</div>
+            <div class="hero-speaker-role">Chief Veterinary Officer · Wedgewood</div>
           </div>
         </div>
       </div>
@@ -460,7 +470,7 @@
         Join the Veterinary Business Institute for a practical panel on retaining your team through 2027 — compensation, culture, and burnout prevention. Compensation matches the corporate offer; culture, growth, and how you spot burnout early are what actually keep your best people.
       </p>
       <p class="about-copy">
-        Three experts — a Conscious Leadership Coach specializing in team retention and burnout prevention, a multi-practice owner and founder of a professional development platform for veterinary teams, and a senior HR consultant with a decade of veterinary industry experience — walk through the concrete decisions independent owners can make next.
+        Four experts — a Conscious Leadership Coach specializing in team retention and burnout prevention, a multi-practice owner and founder of a professional development platform for veterinary teams, a senior HR consultant with a decade of veterinary industry experience, and a Chief Veterinary Officer specializing in people-first leadership and clinician retention — walk through the concrete decisions independent owners can make next.
       </p>
     </div>
     <div class="who-box">
@@ -524,6 +534,21 @@
         </div>
         <div class="bio-text">
           Kellie Olah, SPHR, CVPM, SHRM-SCP is a senior human resources and practice management consultant with more than a decade of experience advising veterinary organizations across the United States. She works closely with practice owners, executive teams, and multi-site leadership groups to solve complex people, compliance, and culture challenges while supporting sustainable growth. Kellie is part of the Veterinary Business Advisors team, where she provides strategic HR consulting, leadership development, culture assessments, and compliance guidance to independent practices and large specialty hospitals. Her work often sits at the intersection of operations, finance, and people strategy, helping organizations translate vision into executable systems that actually work day-to-day.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Rae%20Hutchins_VET_28.10.2026.jpg" alt="Dr. Rae Hutchins" onerror="this.style.display='none';this.parentNode.innerHTML='RH'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Dr. Rae Hutchins, DVM</div>
+            <div class="bio-role">Chief Veterinary Officer · Wedgewood</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Dr. Rae Hutchins is Chief Veterinary Officer at Wedgewood Pharmacy — a veterinary executive and former Director-at-Large with BCVMO specializing in people-first leadership, veterinary workforce culture, clinician retention, and burnout prevention.
         </div>
       </div>
     </div>

@@ -173,15 +173,15 @@
   .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
   .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
   .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
-  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
   .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-  .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
-  .bio-photo { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--green-100), var(--green-50)); border: 3px solid var(--green-400); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--green-700); flex-shrink: 0; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .bio-card-top { display: flex; flex-direction: column; gap: 12px; padding: 22px 20px 0; align-items: flex-start; }
+  .bio-photo { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--green-100), var(--green-50)); border: 3px solid var(--green-400); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--green-700); flex-shrink: 0; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
   .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-  .bio-name { font-size: 18px; font-weight: 700; color: var(--slate-900); margin-bottom: 2px; }
-  .bio-role { font-size: 12px; color: var(--green-600); font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.5px; }
-  .bio-text { padding: 16px 24px 24px; font-size: 13px; color: var(--slate-500); line-height: 1.65; }
+  .bio-name { font-size: 15px; font-weight: 700; color: var(--slate-900); margin-bottom: 3px; line-height: 1.2; }
+  .bio-role { font-size: 10.5px; color: var(--green-600); font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.5px; }
+  .bio-text { padding: 14px 20px 22px; font-size: 12.5px; color: var(--slate-500); line-height: 1.6; }
 
   .cta-band { padding: 80px 0; background: var(--white); text-align: center; border-top: 1px solid var(--slate-100); }
   .cta-band h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 44px; color: var(--slate-900); margin-bottom: 10px; font-weight: 600; }
@@ -209,7 +209,7 @@
     .hero-form-shell { max-width: 640px; }
     .about-grid { grid-template-columns: 1fr; gap: 36px; }
     h1.hero-title { font-size: 36px; }
-    .bio-cards { grid-template-columns: 1fr; }
+    .bio-cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .topic-cards { grid-template-columns: 1fr; }
     section.topics, .about-section, .speakers-section { padding: 60px 0; }
     .cta-band { padding: 60px 0; }
@@ -233,6 +233,7 @@
     form .row { grid-template-columns: 1fr; }
     .form-note { grid-template-columns: 1fr; }
     .topics .section-title, .about-title, .speakers-section .section-title { font-size: 30px; }
+    .bio-cards { grid-template-columns: 1fr; }
     .topic-card { padding: 20px 18px; }
     .cta-band h3 { font-size: 28px; }
     .cta-btn-lg { padding: 16px 32px; font-size: 15px; }
@@ -338,6 +339,15 @@
           <div class="hero-speaker-meta">
             <div class="hero-speaker-name">Jacqueline Scanlon, CVPM</div>
             <div class="hero-speaker-role">Founder · Mistress of Management</div>
+          </div>
+        </div>
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Jocelyn%20Birch%20Baker_VET_09.12.2026.jpg" alt="Dr. Jocelyn Birch Baker" onerror="this.style.display='none';this.parentNode.innerHTML='JBB'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Dr. Jocelyn Birch Baker, BVSc (Hons)</div>
+            <div class="hero-speaker-role">Practice Owner · High Street Veterinary Surgery &amp; Smooth Operating Vets</div>
           </div>
         </div>
       </div>
@@ -452,7 +462,7 @@
         Join the Veterinary Business Institute for a practical panel on the 2027 growth plan workshop — build your practice's plan live on this panel. Most owners end the year with big ambitions and no page to point at; by January the ambition is buried under the schedule and nothing changes.
       </p>
       <p class="about-copy">
-        Two experts — a longtime companion-animal practice owner, past College of Veterinarians of Ontario president, and current locum, mentor and consultant, and a 25-year vet and pet services leader whose experience spans ownership, regional and national operations, and sales — walk through building a one-page 2027 plan live and the discipline to make it stick past January.
+        Four experts — a longtime companion-animal practice owner and past College of Veterinarians of Ontario president, a 25-year vet and pet services leader across ownership, regional operations, and sales, a 30-year CVPM management consultant and founder of Mistress of Management, and a 40-year practice owner, AVA Veterinary Business Thought Leader 2022, and international speaker who coaches vets through practice start-ups and acquisitions — walk through building a one-page 2027 plan live and the discipline to make it stick past January.
       </p>
     </div>
     <div class="who-box">
@@ -516,6 +526,21 @@
         </div>
         <div class="bio-text">
           Jacqueline Scanlon, CVPM, is a veterinary management consultant with 30 years of experience in veterinary medicine. Through Mistress of Management, she helps practices strengthen financial performance, improve workflows, and support their teams. A passionate advocate for ethical leadership, she believes sustainable businesses and compassionate patient care belong together.
+        </div>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Jocelyn%20Birch%20Baker_VET_09.12.2026.jpg" alt="Dr. Jocelyn Birch Baker" onerror="this.style.display='none';this.parentNode.innerHTML='JBB'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Dr. Jocelyn Birch Baker, BVSc (Hons)</div>
+            <div class="bio-role">Practice Owner · High Street Veterinary Surgery &amp; Smooth Operating Vets</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Dr Jocelyn Birch Baker, BVSc, is a practice owner with over 40 years in veterinary medicine and was named Veterinary Business Thought Leader 2022 by the AVA. She speaks internationally on the future of veterinary women and coaches vets, particularly women, through practice start-ups and acquisitions, so they can buy, run and grow a practice with confidence and find personal, financial and professional freedom through ownership.
         </div>
       </div>
       </div>
